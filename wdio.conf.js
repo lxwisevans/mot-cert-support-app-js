@@ -131,9 +131,10 @@ capabilities: [{
 reporters: [
   ['junit', {
     outputDir: './reports/e2e/',
-    outputFileFormat: () => 'junit-e2e.xml'
+    outputFileFormat: ({ cid }) => `junit-${cid}.xml`
   }]
-],
+]
+,
 
 
     // Options to be passed to Mocha.
