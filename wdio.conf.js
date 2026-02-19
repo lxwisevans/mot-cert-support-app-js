@@ -127,7 +127,12 @@ capabilities: [{
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec','junit'],
+  reporters: [['junit',{
+    outputDir: './reports/e2e-report/',
+    outputFileFormat: function(options) {
+        return 'junit-report.xml'
+    }
+}]],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
