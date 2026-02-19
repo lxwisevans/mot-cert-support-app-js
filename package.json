@@ -36,10 +36,10 @@
       "node_modules/(?!@shotgunjed)/"
     ]
   },
-  "jest-junit": {
-    "outputDirectory": "reports/junit",
-    "outputName": "junit.xml"
-  },
+"jest-junit": {
+  "outputDirectory": ".",
+  "outputName": "junit-unit.xml"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
